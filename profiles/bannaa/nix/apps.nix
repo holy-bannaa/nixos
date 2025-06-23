@@ -1,3 +1,5 @@
+{ config, pkgs, inputs, ... }:
+
 {
 	users.users.bannaa = {
 		packages = with pkgs; [
