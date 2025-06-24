@@ -17,12 +17,6 @@
 			unzip
 		];
 
-		fonts.packages = with pkgs; [
-			nerd-fonts.jetbrains-mono
-			noto-fonts-color-emoji
-			noto-fonts
-		];
-
 		sessionVariables.NIXOS_OZONE_WL = "1";
 
 		variables = {
@@ -33,6 +27,13 @@
 			MANPAGER = "nvim +Man!";
 		};
 	};
+
+	fonts.packages = with pkgs; [
+		nerd-fonts.jetbrains-mono
+		noto-fonts-color-emoji
+		noto-fonts
+	];
+
 
 	services.xserver.enable = true;
 	#sddm
