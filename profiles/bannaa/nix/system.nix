@@ -40,7 +40,7 @@
 	services.displayManager.sddm = {
 		enable = true;
 		package = pkgs.kdePackages.sddm;
-		theme = "astronaut";
+		theme = "maya";
 		extraPackages = [ pkgs.sddm-astronaut ];
 	};
 

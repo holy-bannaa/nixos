@@ -7,7 +7,7 @@
 		isNormalUser = true;
 		description = "bannaa";
 		extraGroups = [ "networkmanager" "wheel" ];
-		shell = pkgs.zsh;
+		shell = pkgs.fish;
 		packages = with pkgs; [
 			(discord.override {
 				withVencord = true;
@@ -40,6 +40,10 @@
 			enable = true;
 			theme = "bureau";
 		};
+	};
+
+	programs.fish = {
+		enable = true;
 	};
 
 	# firefox
