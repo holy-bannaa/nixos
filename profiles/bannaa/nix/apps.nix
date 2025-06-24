@@ -23,6 +23,7 @@
 			zoxide
 			eza
 			dunst
+			fzf
 		];
 	};
 

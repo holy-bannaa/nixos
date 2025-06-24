@@ -6,7 +6,7 @@
 			./hardware-configuration.nix
 			./apps.nix
 			./nvidia.nix
-			./env.nix
+			./system.nix
 			inputs.home-manager.nixosModules.home-manager
 		];
 
