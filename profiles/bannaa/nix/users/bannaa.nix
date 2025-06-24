@@ -1,7 +1,13 @@
 { config, pkgs, inputs, ... }:
 
 {
+	nixpkgs.config.allowUnfree = true;
+
 	users.users.bannaa = {
+		isNormalUser = true;
+		description = "bannaa";
+		extraGroups = [ "networkmanager" "wheel" ];
+		shell = pkgs.zsh;
 		packages = with pkgs; [
 			(discord.override {
 				withVencord = true;
@@ -27,6 +33,7 @@
 		];
 	};
 
+	# zsh
 	programs.zsh = {
 		enable = true;
 		ohMyZsh = {

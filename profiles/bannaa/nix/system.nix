@@ -1,6 +1,13 @@
 { config, pkgs, inputs, ... }:
 
 {
+	programs.nix-ld.enable = true;
+	programs.nix-ld.libraries = with pkgs; [];
+	nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+	boot.loader.systemd-boot.enable = true;
+	boot.loader.efi.canTouchEfiVariables = true;
+
 	environment = {
 		systemPackages = with pkgs; [
 			gcc
@@ -8,6 +15,12 @@
 			hyprpolkitagent
 			hyprshot
 			unzip
+		];
+
+		fonts.packages = with pkgs; [
+			nerd-fonts.jetbrains-mono
+			noto-fonts-color-emoji
+			noto-fonts
 		];
 
 		sessionVariables.NIXOS_OZONE_WL = "1";
@@ -21,4 +34,46 @@
 		};
 	};
 
+	services.xserver.enable = true;
+	#sddm
+	services.displayManager.sddm = {
+		enable = true;
+		package = pkgs.kdePackages.sddm;
+		theme = "sddm-astronaut-theme";
+		extraPackages = [ pkgs.sddm-astronaut ];
+	};
+
+	networking = {
+		networkmanager.enable = true;
+		hostName = "greg-butterschotch";
+	};
+
+	security.rtkit.enable = true;
+	services.pipewire = {
+		enable = true;
+		alsa.enable = true;
+		alsa.support32Bit = true;
+		pulse.enable = true;
+		jack.enable = true;
+	};
+
+		services.xserver.xkb = {
+		layout = "us";
+		variant = "";
+	};
+
+	time.timeZone = "Europe/Bucharest";
+
+	i18n.defaultLocale = "en_US.UTF-8";
+	i18n.extraLocaleSettings = {
+		LC_ADDRESS = "ro_RO.UTF-8";
+		LC_IDENTIFICATION = "ro_RO.UTF-8";
+		LC_MEASUREMENT = "ro_RO.UTF-8";
+		LC_MONETARY = "ro_RO.UTF-8";
+		LC_NAME = "ro_RO.UTF-8";
+		LC_NUMERIC = "ro_RO.UTF-8";
+		LC_PAPER = "ro_RO.UTF-8";
+		LC_TELEPHONE = "ro_RO.UTF-8";
+		LC_TIME = "ro_RO.UTF-8";
+	};
 }
