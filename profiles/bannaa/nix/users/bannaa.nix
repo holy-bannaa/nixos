@@ -1,8 +1,6 @@
 { config, pkgs, inputs, ... }:
 
 {
-	nixpkgs.config.allowUnfree = true;
-
 	users.users.bannaa = {
 		isNormalUser = true;
 		description = "bannaa";
@@ -31,6 +29,13 @@
 			dunst
 			fzf
 		];
+	};
+
+	#zoxide
+	programs.zoxide = {
+		enable = true;
+		enableFishIntegration = true;
+		enableZshIntegration = true;
 	};
 
 	# zsh
