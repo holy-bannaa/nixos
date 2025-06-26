@@ -29,6 +29,7 @@
 			dunst
 			fzf
 			wineWowPackages.stable
+			qbittorrent-enhanced
 		];
 	};
 
