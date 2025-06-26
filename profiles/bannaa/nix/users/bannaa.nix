@@ -28,6 +28,7 @@
 			eza
 			dunst
 			fzf
+			wineWowPackages.stable
 		];
 	};
 
