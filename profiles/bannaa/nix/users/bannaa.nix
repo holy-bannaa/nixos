@@ -30,6 +30,7 @@
 			fzf
 			wineWowPackages.stable
 			qbittorrent-enhanced
+			protonplus
 		];
 	};
 
