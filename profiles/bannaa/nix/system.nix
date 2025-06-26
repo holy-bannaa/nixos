@@ -15,6 +15,7 @@
 			hyprpolkitagent
 			hyprshot
 			unzip
+			rar
 		];
 
 		sessionVariables.NIXOS_OZONE_WL = "1";
