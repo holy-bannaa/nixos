@@ -10,7 +10,8 @@
 		grub = {
 			enable = true;
 			efiSupport = true;
-			device = "/dev/nvme0n1p1";
+			device = "/dev/nvme0n1";
+		};
 	};
 
 	environment = {
