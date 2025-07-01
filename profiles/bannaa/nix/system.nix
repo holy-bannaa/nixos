@@ -7,10 +7,12 @@
 
 	boot.loader = {
 		efi.canTouchEfiVariables = true;
+		efiSysMountPoint = "/boot";
 		grub = {
 			enable = true;
 			efiSupport = true;
-			device = "/dev/nvme0n1";
+			device = "nodev";
+			useOSProber = true;
 		};
 	};
 
