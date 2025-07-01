@@ -5,8 +5,13 @@
 	programs.nix-ld.libraries = with pkgs; [];
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-	boot.loader.systemd-boot.enable = true;
-	boot.loader.efi.canTouchEfiVariables = true;
+	boot.loader = {
+		efi.canTouchEfiVariables = true;
+		grub = {
+			enable = true;
+			efiSupport = true;
+			device = "/dev/nvme0n1p1";
+	};
 
 	environment = {
 		systemPackages = with pkgs; [
