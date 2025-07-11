@@ -31,6 +31,8 @@
 			wineWowPackages.stable
 			qbittorrent-enhanced
 			protonplus
+			kdePackages.dolphin
+			kdePackages.ark
 		];
 	};
 
