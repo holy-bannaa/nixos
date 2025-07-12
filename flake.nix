@@ -5,7 +5,7 @@
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
 
 		home-manager = {
-			url = "github:nix-community/home-manager/release-21.05";
+			url = "github:nix-community/home-manager/release-25.05";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
@@ -15,8 +15,8 @@
 			specialArgs = {inherit inputs;};
 			modules = [
 				./nix/greg.nix
-
 				inputs.home-manager.nixosModules.home-manager
+
 				{
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
