@@ -14,6 +14,7 @@
 			enable = true;
 			efiSupport = true;
 			device = "nodev";
+			theme = "${pkgs.libsForQt5.breeze-grub}/grub/themes/breeze";
 		};
 	};
 
