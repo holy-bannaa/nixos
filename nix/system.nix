@@ -27,6 +27,7 @@
 			unzip
 			rar
 			steamtinkerlaunch
+			sddm-astronaut
 		];
 
 		sessionVariables.NIXOS_OZONE_WL = "1";
@@ -52,8 +53,7 @@
 	services.displayManager.sddm = {
 		enable = true;
 		package = pkgs.kdePackages.sddm;
-		theme = "maya";
-		extraPackages = [ pkgs.sddm-astronaut ];
+		theme = "sddm-astronaut-theme";
 	};
 
 	networking = {
