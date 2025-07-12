@@ -14,13 +14,13 @@
 		nixosConfigurations.greg-butterscotch = nixpkgs.lib.nixosSystem {
 			specialArgs = {inherit inputs;};
 			modules = [
-				./profiles/bannaa/nix/greg.nix
+				./nix/greg.nix
 
 				inputs.home-manager.nixosModules.home-manager
 				{
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
-					home-manager.users.bannaa = import ./profiles/bannaa/home-manager/home.nix;
+					home-manager.users.bannaa = import ./home-manager/home.nix;
 					home-manager.extraSpecialArgs = {inherit inputs;};
 				}
 			];
