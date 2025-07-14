@@ -35,7 +35,7 @@
 		};
 	};
 
-	home.sessionVariables = {
+	home.sessionVariables = lib.mkForce {
 		QT_QPA_PLATFORMTHEME = "gtk3";
 		QT_STYLE_OVERRIDE = "adwaita-dark";
 	};
