@@ -28,7 +28,6 @@
 
 	qt = {
 		enable = true;
-		platformTheme = "gtk3";
 		style = {
 			name = "adwaita-dark";
 			package = pkgs.adwaita-qt;
@@ -42,6 +41,14 @@
 
 		diff-highlight.enable = true;
 	};
+
+	home.sessionVariables = {
+		QT_QPA_PLATFORMTHEME = "gtk3";
+		QT_STYLE_OVERRIDE = "adwaita-dark";
+	};
+
+	home.shell.enableShellIntegration = true;
+
 
 	home.stateVersion = "25.05";
 
