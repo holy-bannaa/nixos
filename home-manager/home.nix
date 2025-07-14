@@ -20,11 +20,15 @@
 			name = "Adwaita-dark";
 			package = pkgs.gnome-themes-extra;
 		};
+		iconTheme = {
+			name = "MoreWaita";
+			package = pkgs.morewaita-icon-theme;
+		};
 	};
 
 	qt = {
 		enable = true;
-		platformTheme.name = "gtk";
+		platformTheme.name = "gtk3";
 		style = {
 			name = "adwaita-dark";
 			package = pkgs.adwaita-qt;

@@ -33,7 +33,11 @@
 			rustup
 		];
 
-		sessionVariables.NIXOS_OZONE_WL = "1";
+		sessionVariables = {
+			NIXOS_OZONE_WL = "1";
+			QT_QPA_PLATFORMTHEME = "gtk3";
+			QT_STYLE_OVERRIDE = "adwaita-dark";
+		};
 
 		variables = {
 			EDITOR = "nvim";
