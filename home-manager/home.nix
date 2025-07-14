@@ -25,7 +25,10 @@
 	qt = {
 		enable = true;
 		platformTheme.name = "gtk";
-		style.name = "adwaita-dark";
+		style = {
+			name = "adwaita-dark";
+			package = pkgs.adwaita-qt;
+		};
 	};
 
 	programs.git = {
