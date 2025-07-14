@@ -7,6 +7,7 @@
 			./users/bannaa.nix
 			./nvidia.nix
 			./system.nix
+			./hyprland.nix
 			inputs.home-manager.nixosModules.home-manager
 		];
 

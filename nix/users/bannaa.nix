@@ -10,25 +10,12 @@
 			(discord.override {
 				withVencord = true;
 			})
-			rustup
 			neovim
+			steamtinkerlaunch
 			lutris
-			kitty
-			wallust
-			rofi-wayland
 			fastfetch
 			tmux
-			swww
-			wl-clipboard-rs
-			playerctl
 			btop
-			pavucontrol
-			nh
-			zoxide
-			eza
-			dunst
-			fzf
-			wineWowPackages.stable
 			qbittorrent-enhanced
 			protonplus
 			kdePackages.dolphin
@@ -66,9 +53,4 @@
 		enable = true;
 	};
 
-	# hyprland
-	programs.hyprland = {
-		enable = true;
-		xwayland.enable = true;
-	};
 }

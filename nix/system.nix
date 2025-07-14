@@ -22,12 +22,15 @@
 		systemPackages = with pkgs; [
 			gcc
 			git
-			hyprpolkitagent
-			hyprshot
 			unzip
 			rar
-			steamtinkerlaunch
 			sddm-astronaut
+			nh
+			eza
+			fzf
+			wineWowPackages.stable
+			kitty
+			rustup
 		];
 
 		sessionVariables.NIXOS_OZONE_WL = "1";
@@ -49,6 +52,7 @@
 
 
 	services.xserver.enable = true;
+
 	#sddm
 	services.displayManager.sddm = {
 		enable = true;
