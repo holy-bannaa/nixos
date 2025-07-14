@@ -28,10 +28,16 @@
 
 	qt = {
 		enable = true;
+		platformTheme.name = "gtk";
 		style = {
 			name = "adwaita-dark";
 			package = pkgs.adwaita-qt;
 		};
+	};
+
+	home.sessionVariables = {
+		QT_QPA_PLATFORMTHEME = "gtk3";
+		QT_STYLE_OVERRIDE = "adwaita-dark";
 	};
 
 	programs.git = {
@@ -40,11 +46,6 @@
 		userName = "bannaa";
 
 		diff-highlight.enable = true;
-	};
-
-	home.sessionVariables = {
-		QT_QPA_PLATFORMTHEME = "gtk3";
-		QT_STYLE_OVERRIDE = "adwaita-dark";
 	};
 
 	home.shell.enableShellIntegration = true;
