@@ -31,6 +31,7 @@
 			wineWowPackages.stable
 			kitty
 			rustup
+			kdePackages.qtmultimedia
 		];
 
 		sessionVariables = {
@@ -54,6 +55,12 @@
 
 
 	services.xserver.enable = true;
+
+	qt = {
+		enable = true;
+		style = "adwaita-dark";
+		platformTheme = "gtk2";
+	};
 
 	#sddm
 	services.displayManager.sddm = {
