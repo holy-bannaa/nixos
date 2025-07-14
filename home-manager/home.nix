@@ -35,11 +35,6 @@
 		};
 	};
 
-	home.sessionVariables = lib.mkForce {
-		QT_QPA_PLATFORMTHEME = "gtk3";
-		QT_STYLE_OVERRIDE = "adwaita-dark";
-	};
-
 	programs.git = {
 		enable = true;
 		userEmail = "holy-bannaa@proton.me";
