@@ -25,5 +25,6 @@
 				}
 			];
 		};
+		homeManagerModules.default = ./home-manager/modukles/;
 	};
 }
