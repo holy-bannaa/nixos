@@ -7,16 +7,12 @@
 		programs.fish = {
 		enable = true;
 		generateCompletions = true;
-		shellAliases = {
-			gs = "git status";
-			ga = "git add";
-			gc = "git commit -m";
-			n = "nivm";
-		};
 		shellAbbrs = {
 			gs = "git status";
 			ga = "git add";
 			gc = "git commit -m";
+			n = "nvim";
+			upnix = "sudo nixos-rebuild switch --flake ~/.config/nixos#greg-butterscotch";
 		};
 	};
 
