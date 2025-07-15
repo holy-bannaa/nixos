@@ -5,7 +5,6 @@
 	home.homeDirectory = "/home/bannaa";
 
 	imports = [
-		./shell.nix
 		./git.nix
 		./colors.nix
 	];

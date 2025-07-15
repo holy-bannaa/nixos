@@ -41,6 +41,14 @@
 
 	programs.fish = {
 		enable = true;
+		shellAbbrs = {
+			gs = "git status";
+			ga = "git add";
+			gc = "git commit -m";
+			gd = "git diff";
+			n = "nvim";
+			nixup = "sudo nixos-rebuild switch --flake ~/.config/nixos#greg-butterscotch";
+		};
 	};
 
 	# firefox
