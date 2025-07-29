@@ -59,12 +59,6 @@
 
 	services.xserver.enable = true;
 
-	qt = {
-		enable = true;
-		style = "breeze";
-		platformTheme = "kde6";
-	};
-
 	#sddm
 	services.displayManager.sddm = {
 		enable = true;
