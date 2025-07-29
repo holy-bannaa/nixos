@@ -32,6 +32,7 @@
 			kitty
 			rustup
 			kdePackages.qtmultimedia
+			kdePackages.breeze
 		];
 
 		sessionVariables = {
@@ -57,8 +58,8 @@
 
 	qt = {
 		enable = true;
-		style = "adwaita-dark";
-		platformTheme = "gtk2";
+		style = "breeze";
+		platformTheme = "kde6";
 	};
 
 	#sddm
