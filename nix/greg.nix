@@ -8,6 +8,7 @@
 			./nvidia.nix
 			./system.nix
 			./hyprland.nix
+			./colors.nix
 			inputs.home-manager.nixosModules.home-manager
 		];
 

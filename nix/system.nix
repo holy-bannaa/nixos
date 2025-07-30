@@ -33,6 +33,10 @@
 			rustup
 			kdePackages.qtmultimedia
 			kdePackages.breeze
+			gnome-themes-extra
+			morewaita-icon-theme
+			adwaita-qt6
+			themechanger
 		];
 
 		sessionVariables = {
@@ -49,13 +53,6 @@
 			QT_STYLE_OVERRIDE = "breeze";
 		};
 	};
-
-	fonts.packages = with pkgs; [
-		nerd-fonts.jetbrains-mono
-		noto-fonts-color-emoji
-		noto-fonts
-	];
-
 
 	services.xserver.enable = true;
 

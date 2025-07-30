@@ -13,6 +13,8 @@
 			pavucontrol
 			wallust
 			dunst
+			polkit_gnome
+			qt6ct
 		];
 	};
 

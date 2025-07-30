@@ -10,16 +10,4 @@
 			sansSerif = [ "Noto Sans" ];
 		};
 	};
-
-	gtk = {
-		enable = true;
-		theme = {
-			name = "Adwaita-dark";
-			package = pkgs.gnome-themes-extra;
-		};
-		iconTheme = {
-			name = "MoreWaita";
-			package = pkgs.morewaita-icon-theme;
-		};
-	};
 }
