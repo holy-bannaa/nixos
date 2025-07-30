@@ -15,6 +15,7 @@
 			dunst
 			polkit_gnome
 			qt6ct
+			nwg-look
 		];
 	};
 

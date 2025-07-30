@@ -36,7 +36,8 @@
 			gnome-themes-extra
 			morewaita-icon-theme
 			adwaita-qt6
-			themechanger
+			adwaita-icon-theme
+			adwaita-qt
 		];
 
 		sessionVariables = {
