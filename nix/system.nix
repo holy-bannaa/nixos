@@ -49,9 +49,8 @@
 			NIXOS_OZONE_WL = "1";
 			MOZ_ENABLE_WAYLAND = "1";
 			MANPAGER = "nvim +Man!";
-			QT_QPA_PLATFORMTHEME = "kde6";
-			QT_QPA_PLATFORM = "wayland;xcb";
-			QT_STYLE_OVERRIDE = "breeze";
+			QT_QPA_PLATFORMTHEME = "qt6ct";
+			QT_QPA_PLATFORM = "wayland";
 		};
 	};
 
