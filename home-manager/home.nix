@@ -12,5 +12,10 @@
 	home.stateVersion = "25.05";
 
 	programs.home-manager.enable = true;
-}
 
+	# symlink .dotfiles
+	home.file."${config.xdg.configHome}" = {
+		source = ./dotfiles/;
+		recursive = true;
+	};
+}

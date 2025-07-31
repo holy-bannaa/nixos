@@ -24,7 +24,6 @@
 			git
 			unzip
 			rar
-			sddm-astronaut
 			nh
 			eza
 			fzf
@@ -33,6 +32,7 @@
 			rustup
 			kdePackages.qtmultimedia
 			kdePackages.breeze
+			sddm-astronaut
 			gnome-themes-extra
 			morewaita-icon-theme
 			adwaita-qt6
@@ -60,7 +60,13 @@
 	services.displayManager.sddm = {
 		enable = true;
 		package = pkgs.kdePackages.sddm;
+		extraPackages = pkgs.sddm-astronaut;
 		theme = "sddm-astronaut-theme";
+		settings = {
+			Theme = {
+				Current = "sddm-astronaut-theme";
+			};
+		};
 	};
 
 	networking = {
