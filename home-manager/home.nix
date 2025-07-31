@@ -15,7 +15,7 @@
 
 	# symlink .dotfiles
 	home.file."${config.xdg.configHome}" = {
-		source = ./dotfiles/;
+		source = ./dotfiles;
 		recursive = true;
 	};
 }

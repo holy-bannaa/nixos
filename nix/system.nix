@@ -60,7 +60,7 @@
 	services.displayManager.sddm = {
 		enable = true;
 		package = pkgs.kdePackages.sddm;
-		extraPackages = pkgs.sddm-astronaut;
+		extraPackages = [pkgs.sddm-astronaut];
 		theme = "sddm-astronaut-theme";
 		settings = {
 			Theme = {
