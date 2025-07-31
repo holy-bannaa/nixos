@@ -1,6 +1,16 @@
 { config, pkgs, inputs, ... }:
 
 {
+		nixpkgs.overlays = [
+				(final: _: {
+# this allows you to access `pkgs.unstable` anywhere in your config
+				 unstable = import inputs.nixpkgs-unstable {
+				 inherit (final.stdenv.hostPlatform) system;
+				 inherit (final) config;
+				 };
+				 })
+		];
+
 	programs.nix-ld.enable = true;
 	programs.nix-ld.libraries = with pkgs; [];
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -38,6 +48,7 @@
 			adwaita-qt6
 			adwaita-icon-theme
 			adwaita-qt
+            inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
 		];
 
 		sessionVariables = {

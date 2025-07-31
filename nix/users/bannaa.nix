@@ -10,7 +10,6 @@
 			(discord.override {
 				withVencord = true;
 			})
-			neovim
 			steamtinkerlaunch
 			lutris
 			fastfetch
