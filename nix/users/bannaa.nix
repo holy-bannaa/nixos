@@ -20,6 +20,7 @@
 			kdePackages.dolphin
 			kdePackages.ark
 			nicotine-plus
+			mpv
 		];
 	};
 
