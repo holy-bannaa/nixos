@@ -26,6 +26,7 @@
 					home-manager.useUserPackages = true;
 					home-manager.users.bannaa = import ./home-manager/home.nix;
 					home-manager.extraSpecialArgs = {inherit inputs;};
+					home-manager.backupFileExtension = "backup";
 				}
 			];
 		};
