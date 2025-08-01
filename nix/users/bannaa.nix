@@ -23,7 +23,7 @@
 			feh
 			peazip
 			yazi
-			thunar
+			xfce.thunar
 		];
 	};
 
