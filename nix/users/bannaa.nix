@@ -19,10 +19,9 @@
 			protonplus
 			nicotine-plus
 			mpv
-			vpv
-			feh
-			peazip
 			yazi
+			file-roller
+			loupe
 			xfce.thunar
 		];
 	};
