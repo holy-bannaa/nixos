@@ -22,6 +22,7 @@
 			vpv
 			feh
 			peazip
+			yazi
 			thunar
 		];
 	};
