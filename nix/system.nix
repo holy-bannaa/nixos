@@ -85,7 +85,7 @@
 		hostName = "greg-butterschotch";
 
 		firewall = {
-			enabled = true;
+			enable = true;
 			allowedTCPPorts =  [ 2234 ];
 		};
 	};
