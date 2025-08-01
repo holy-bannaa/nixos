@@ -18,4 +18,7 @@
 		source = ./dotfiles;
 		recursive = true;
 	};
+
+	home-manager.backupFileExtension = "backup";
+
 }
