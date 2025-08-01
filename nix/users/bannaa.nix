@@ -17,10 +17,12 @@
 			btop
 			qbittorrent-enhanced
 			protonplus
-			kdePackages.dolphin
-			kdePackages.ark
 			nicotine-plus
 			mpv
+			vpv
+			feh
+			peazip
+			thunar
 		];
 	};
 
