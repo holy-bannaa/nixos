@@ -83,6 +83,11 @@
 	networking = {
 		networkmanager.enable = true;
 		hostName = "greg-butterschotch";
+
+		firewall = {
+			enabled = true;
+			allowedTCPPorts =  [ 2234 ];
+		};
 	};
 
 	security.rtkit.enable = true;
