@@ -25,7 +25,7 @@
 				{
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
-					home-manager.users.bannaa = { ... }@args: import ./home.nix args;
+					home-manager.users.bannaa = import ./home.nix;
 					home-manager.extraSpecialArgs = {inherit inputs;};
 					home-manager.backupFileExtension = "backup";
 				}
