@@ -8,10 +8,6 @@
 
 		neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
 		
-		home-manager = {
-			url = "github:nix-community/home-manager/release-25.05";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
 	};
 
 	outputs = { self, nixpkgs, ... }@inputs: {
@@ -19,14 +15,9 @@
 			specialArgs = {inherit inputs;};
 			modules = [
 				./nix/greg.nix
-				inputs.home-manager.nixosModules.home-manager
 
 				{
-					home-manager.useGlobalPkgs = true;
-					home-manager.useUserPackages = true;
-					home-manager.users.bannaa = import ./home-manager/home.nix;
-					home-manager.extraSpecialArgs = {inherit inputs;};
-					home-manager.backupFileExtension = "backup";
+
 				}
 			];
 		};
