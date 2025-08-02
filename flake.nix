@@ -7,6 +7,11 @@
 		nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
 		neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+
+		home-manager = {
+			url = "github:nix-community/home-manager/release-25.05";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 		
 	};
 
@@ -15,9 +20,13 @@
 			specialArgs = {inherit inputs;};
 			modules = [
 				./nix/greg.nix
-
+				inputs.home-manager.nixosModules.home-manager
 				{
-
+					home-manager.useGlobalPkgs = true;
+					home-manager.useUserPackages = true;
+					home-manager.users.bannaa = import ./home.nix;
+					home-manager.extraSpecialArgs = {inherit inputs;};
+					home-manager.backupFileExtension = "backup";
 				}
 			];
 		};
