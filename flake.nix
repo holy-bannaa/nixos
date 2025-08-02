@@ -15,8 +15,9 @@
 		
 	};
 
-	outputs = { self, nixpkgs, ... }@inputs: {
+	outputs = { self, nixpkgs, home-manager, ... }@inputs: {
 		nixosConfigurations.greg-butterscotch = nixpkgs.lib.nixosSystem {
+			system = "x86_64-linux";
 			specialArgs = {inherit inputs;};
 			modules = [
 				./nix/greg.nix
