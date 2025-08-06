@@ -23,6 +23,9 @@
 			file-roller
 			loupe
 			xfce.thunar
+			arduino-ide
+			processing
+			unityhub
 		];
 	};
 
