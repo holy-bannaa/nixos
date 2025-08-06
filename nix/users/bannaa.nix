@@ -24,8 +24,10 @@
 			loupe
 			xfce.thunar
 			processing
+			arduino
 			fuse
 			unityhub
+			flatpak
 		];
 	};
 
