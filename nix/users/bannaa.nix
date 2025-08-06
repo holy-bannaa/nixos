@@ -27,7 +27,6 @@
 			arduino
 			fuse
 			unityhub
-			flatpak
 		];
 	};
 
