@@ -24,6 +24,8 @@
 			loupe
 			xfce.thunar
 			libresprite
+			gimp3-with-plugins
+			krita
 		];
 	};
 
