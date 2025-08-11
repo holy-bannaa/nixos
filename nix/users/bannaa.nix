@@ -26,6 +26,7 @@
 			libresprite
 			gimp3-with-plugins
 			krita
+			pyprland
 		];
 	};
 
