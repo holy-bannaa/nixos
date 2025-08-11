@@ -12,7 +12,7 @@
 		programs.home-manager.enable = true;
 
 		home.activation.sym = lib.hm.dag.entryAfter ["writeBoundary"] ''
-			ln -sf ~/.config/nixos/home/dotfiles/* .			
+			ln -sf ~/.config/nixos/home/dotfiles/* ~/.config/			
 			'';
 }
 
